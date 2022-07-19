@@ -1,0 +1,42 @@
+{
+  "name": "jsapi-capdelay",
+  "version": "1.0.0",
+  "description": "Criando API com Alura - leitor de links em arquivos markdown",
+  "keywords": [
+    "markdown",
+    "URL"
+  ],
+  "preferGlobal": true,
+  "bugs": {
+    "url": "https://github.com/michelmendoza/issues",
+    "email": "noardigital.framework@gmail.com"
+  },
+  "bin": {
+    "jsapi-capdelay": "./cli.js"
+  },
+  "main": "./cli.js",
+  "type": "module",
+  "test": {
+    "plugins": [
+      "@babel/plugin-transform-modules-commonjs"
+    ]
+  },
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "cli": "node cli.js ./test/arquivos/com_link"
+  },
+  "author": "Capitan Delay",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "mongoose": "^6.4.0",
+    "node-fetch": "^3.2.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "jest": "^28.1.1"
+  }
+}
